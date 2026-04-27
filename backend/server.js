@@ -6,6 +6,9 @@ require("dotenv").config();
 const employeeRoutes = require("./routes/employees");
 const overtimeRoutes = require("./routes/overtime");
 
+
+console.log("MONGO_URI:", process.env.MONGO_URI);
+
 const app = express();
 
 app.use(cors());
